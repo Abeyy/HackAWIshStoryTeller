@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="story-page-component">
+    HELLO WORLD
     <div class="story-image-component">
       <img src="" alt="Story Image">
     </div>
