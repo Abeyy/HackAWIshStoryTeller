@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header></Header>
+    <StoryPage></StoryPage>
   </div>
 </template>
 
 
 <script>
 import Header from './components/makeAWishHeader.vue'
+import StoryPage from './components/storyPage.vue'
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    StoryPage
   },
   data () {
     return {
