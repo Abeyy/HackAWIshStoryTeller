@@ -1,4 +1,5 @@
 <template lang="html">
+<div>
   <div class="header-component">
     <img class="header-logo" src="../assets/MAW_Logo.png">
   </div>
@@ -8,14 +9,14 @@
     </div>
   </div>
   <div>
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+    <b-form @submit="onSubmit" @reset="onReset">
       <b-form-group id="kid-Name"
                     label="Name"
                     label-for="exampleInput1"
                     description="Please enter the Kid's name">
         <b-form-input id="exampleInput1"
                       type="name"
-                      v-model="form.name"
+
                       required
                       placeholder="Please enter the Kid's name">
         </b-form-input>
@@ -25,7 +26,7 @@
                     label-for="exampleInput2">
         <b-form-input id="image"
                       type="text"
-                      v-model="form.image"
+
                       required
                       placeholder="Upload an image">
         </b-form-input>
@@ -35,7 +36,7 @@
                     label-for="exampleInput2">
         <b-form-input id="medical_condition"
                       type="text"
-                      v-model="form.image"
+
                       required
                       placeholder="Enter the medical condition">
         </b-form-input>
@@ -45,7 +46,7 @@
                     label-for="exampleInput2">
         <b-form-input id="age"
                       type="text"
-                      v-model="form.age"
+
                       required
                       placeholder="Enter the age">
         </b-form-input>
@@ -55,6 +56,7 @@
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
   </div>
+</div>
 
 </template>
 
