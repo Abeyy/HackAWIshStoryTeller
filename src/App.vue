@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
+    <button class="btn btn-primary" type="button" name="button">Test</button>
   </div>
 </template>
 
