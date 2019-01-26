@@ -29,13 +29,12 @@ export default {
   },
   computed: {
     currentlySelectedStory() {
-      return this.$store.state.currentlySelectedStory
+      return this.$store.state.currentlySelectedStoryIndex
     }
   },
   methods: {
     setCurrentlySelectedStory(num) {
-      console.log(num)
-      this.$store.commit('setCurrentlySelectedStory', num)
+      this.$store.commit('setCurrentlySelectedStoryIndex', num)
     }
   }
 }
