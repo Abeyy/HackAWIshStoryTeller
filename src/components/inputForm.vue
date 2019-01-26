@@ -1,4 +1,5 @@
 <template lang="html">
+  <div class="input-form-component">
   <div class="header-component">
     <img class="header-logo" src="../assets/MAW_Logo.png">
   </div>
@@ -54,6 +55,7 @@
       <b-button type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
+  </div>
   </div>
 
 </template>
