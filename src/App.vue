@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    
+    <Header></Header>
   </div>
 </template>
 
 
 <script>
+import Header from './components/makeAWishHeader.vue'
 export default {
   name: 'app',
+  components: {
+    Header
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -28,7 +32,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 h1, h2 {
