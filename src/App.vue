@@ -8,10 +8,12 @@
 
 <script>
 import Header from './components/makeAWishHeader.vue'
+import inputForm from './components/inputForm.vue'
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    inputForm
   },
   data () {
     return {
