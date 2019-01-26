@@ -7,6 +7,7 @@
 
 
 <script>
+import StoredJSON from './stories.json'
 import Header from './components/makeAWishHeader.vue'
 import inputForm from './components/inputForm.vue'
 export default {
@@ -19,6 +20,15 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods: {
+    getStoredJSONData () {
+      this.$store.commit('updateMasterStoryList', StoredJSON)
+    }
+  },
+  mounted() {
+    this.getStoredJSONData();
+    
   },
   computed: {
     state() {
