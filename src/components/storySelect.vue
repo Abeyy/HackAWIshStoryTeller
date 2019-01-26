@@ -16,6 +16,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  .story-select-component {
+    cursor: pointer;
+  }
   .select-image {
     max-width: 150px;
     max-height: 150px;
