@@ -9,11 +9,13 @@
 <script>
 import Header from './components/makeAWishHeader.vue'
 import StoryPage from './components/storyPage.vue'
+import inputForm from './components/inputForm.vue'
 export default {
   name: 'app',
   components: {
     Header,
-    StoryPage
+    StoryPage,
+    inputForm
   },
   data () {
     return {
