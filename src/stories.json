@@ -2,6 +2,7 @@
   "6c4de30e-28e3-41b6-9309-fc94f700305e": {
     "name": "John Smith",
     "age": 12,
+    "id": "6c4de30e-28e3-41b6-9309-fc94f700305e",
     "medicalCondition": "Brain Cancer",
     "defaultImage": "",
     "media": [],
@@ -10,6 +11,7 @@
   "e9a97afa-65c9-4f65-8eba-edecdee03e4f": {
     "name": "Mary Johnson",
     "age": 14,
+    "id": "e9a97afa-65c9-4f65-8eba-edecdee03e4f",
     "medicalCondition": "Heart Disease",
     "defaultImage": "",
     "media": [],
@@ -18,9 +20,10 @@
   "bb6f7e51-96ed-4a9a-a70d-83631499c87e": {
     "name": "Maria Thompson",
     "age": 14,
+    "id": "bb6f7e51-96ed-4a9a-a70d-83631499c87e",
     "medicalCondition": "Lung Disease",
     "defaultImage": "",
     "media": [],
-    "storyText": "This is Mary Johnson's Story."
+    "storyText": "This is Maria Thompon's Story."
   }
 }

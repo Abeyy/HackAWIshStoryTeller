@@ -27,8 +27,7 @@ export default {
     }
   },
   mounted() {
-    this.getStoredJSONData();
-    
+    this.getStoredJSONData()
   },
   computed: {
     state() {
