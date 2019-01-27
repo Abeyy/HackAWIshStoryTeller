@@ -32,7 +32,7 @@
         </b-form-input>
       </b-form-group>
       <b-form-group id="image"
-                    label="Image upload"
+                    label="Image URL"
                     label-for="exampleInput2">
         <b-form-input id="image"
                       type="text"
@@ -102,8 +102,7 @@ export default {
         'name': this.name,
         'age': this.age,        
         'storyText': this.storyText,
-        // 'defaultImage': this.image,
-        'defaultImage': 'https://firebasestorage.googleapis.com/v0/b/makeawishstories-9ca11.appspot.com/o/abey.jpeg?alt=media&token=561f66aa-bcd7-4871-8cbe-b201526e0a4f',
+        'defaultImage': this.image,
         'medicalCondition': this.medical_condition,
       }
       this.$store.commit('addStory', myObj)
