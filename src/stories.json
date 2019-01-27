@@ -4,7 +4,7 @@
     "age": 12,
     "id": "6c4de30e-28e3-41b6-9309-fc94f700305e",
     "medicalCondition": "Brain Cancer",
-    "defaultImage": "",
+    "defaultImage": "https://firebasestorage.googleapis.com/v0/b/makeawishstories-9ca11.appspot.com/o/boy1.jpg?alt=media&token=f4ae4b2c-6600-4fda-bb30-bc69e7dfd703",
     "media": [],
     "storyText": "This is John Smith's Story."
   },
