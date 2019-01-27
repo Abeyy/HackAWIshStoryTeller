@@ -5,7 +5,7 @@
   </div>
   <div class="input-form-component">
     <div class="input-form-component">
-      <img src="" alt="Story Image">
+      <!-- <img src="" alt="Story Image"> -->
     </div>
   </div>
   <div>
@@ -82,6 +82,13 @@ export default {
   .header-logo {
     width: 50%;
     max-height: 300px
+  },
+  #kid-Name {
+    width: 400px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 </style>
 
