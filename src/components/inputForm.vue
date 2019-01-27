@@ -16,7 +16,7 @@
                     description="Please enter the Kid's name">
         <b-form-input id="exampleInput1"
                       type="name"
-
+                      v-model="name"
                       required
                       placeholder="Please enter the Kid's name">
         </b-form-input>
@@ -26,7 +26,7 @@
                     label-for="exampleInput2">
         <b-form-input id="image"
                       type="text"
-
+                      v-model="image"
                       required
                       placeholder="Upload an image">
         </b-form-input>
@@ -36,7 +36,7 @@
                     label-for="exampleInput2">
         <b-form-input id="medical_condition"
                       type="text"
-
+                      v-model="medical_condition"
                       required
                       placeholder="Enter the medical condition">
         </b-form-input>
@@ -46,13 +46,13 @@
                     label-for="exampleInput2">
         <b-form-input id="age"
                       type="text"
-
+                      v-model="age"
                       required
                       placeholder="Enter the age">
         </b-form-input>
       </b-form-group>
 
-      <b-button type="submit" variant="primary">Submit</b-button>
+      <b-button @click="addWish" type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
   </div>
@@ -62,6 +62,19 @@
 
 <script>
 export default {
+  data() {
+    return {
+      name: '',
+      image: '',
+      medical_condition: '',
+      age: ''
+    }
+  },
+  methods: {
+    addWish: function() {
+      console.log('got to formtoJson', this.name, this.image, this.medical_condition, this.age)
+    }
+  }
 }
 </script>
 
