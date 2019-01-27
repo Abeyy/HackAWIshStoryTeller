@@ -1,19 +1,19 @@
 <template lang="html">
 <div id="allWishes">
   <div class="header-component">
-    <img class="header-logo" src="../assets/MAW_Logo.png">
+    <Header></Header>
   </div>
 <div class="columns">
   <div class="column">
-    <!-- <div v-for="item in allWishes" :key="item.key" class='list-item'>-->
+    <div v-for="x in 2">
      <div v-for="item in allWishes" :key="item.key">
      <div class="box">
-  <article class="media">
-    <div class="media-left">
-      <figure class="image is-64x64">
-        <img :src="item.defaultImage" alt="Image">
-      </figure>
-    </div>
+      <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img :src="item.defaultImage" alt="Image">
+        </figure>
+      </div>
     <div class="media-content">
       <div class="content">
         <p>
@@ -40,22 +40,21 @@
           </a>
         </div>
       </nav>
-    </div>
-  </article>
-</div>
+      </div>
+    </article>
+  </div>
      
-          </div>
-    </div>
-  
-  
+  </div>
+  </div>
+  </div>
   <div>
-     
   </div>
 </div>
 </div>
 </template>
 <script>
 
+import Header from './makeAWishHeader'
 export default {
   data () {
       return {
@@ -72,6 +71,9 @@ export default {
               { fName: 'Sumi2', age:'9'}
           ]
       }
+  },
+  components: {
+    Header
   },
   computed: {
     allWishes: function () {

@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  .header-component {
+    padding: 20px;
+  }
   .header-logo {
     width: 350px;
     display: inline-block;
@@ -33,6 +36,9 @@ export default {
   }
   nav {
     display: inline-block;
+  }
+  li, button {
+    cursor: pointer;
   }
   .donate_button {
     background-color: #F7B244;

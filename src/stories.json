@@ -6,24 +6,24 @@
     "medicalCondition": "Brain Cancer",
     "defaultImage": "https://firebasestorage.googleapis.com/v0/b/makeawishstories-9ca11.appspot.com/o/boy1.jpg?alt=media&token=f4ae4b2c-6600-4fda-bb30-bc69e7dfd703",
     "media": [],
-    "storyText": "This is John Smith's Story."
+    "storyText": "This is John Smith's Story. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis nulla ante, id lacinia massa facilisis in. Nulla varius scelerisque facilisis. Quisque euismod rhoncus imperdiet. Suspendisse nunc elit, ullamcorper ut diam sed, suscipit vestibulum erat. Sed sodales quis dolor sed lobortis. Sed malesuada sapien sit amet placerat auctor. Nam velit tellus, dignissim non accumsan et, rutrum a est. Phasellus ullamcorper massa ac maximus aliquam. Vivamus turpis erat, finibus a est sodales, molestie ullamcorper urna. In faucibus lobortis lacus ac hendrerit. Curabitur vulputate, mauris sed tempor eleifend, ante justo fermentum lorem, non porta enim tellus et felis. Ut euismod magna sit amet ante aliquam, a ultricies odio gravida. Donec egestas mauris non fringilla lacinia."
   },
   "e9a97afa-65c9-4f65-8eba-edecdee03e4f": {
     "name": "Mary Johnson",
     "age": 14,
     "id": "e9a97afa-65c9-4f65-8eba-edecdee03e4f",
     "medicalCondition": "Heart Disease",
-    "defaultImage": "",
+    "defaultImage": "https://firebasestorage.googleapis.com/v0/b/makeawishstories-9ca11.appspot.com/o/girl1.jpg?alt=media&token=0fca05de-7807-4a4d-982d-025609067b9f",
     "media": [],
-    "storyText": "This is Mary Johnson's Story."
+    "storyText": "This is Mary Johnson's Story. Aliquam quis tellus libero. Vivamus molestie convallis congue. Ut ex ligula, viverra a mollis eget, dapibus in dui. Nulla facilisi. Fusce felis quam, hendrerit a ultricies ornare, tristique nec lectus. Ut varius enim et mauris laoreet, sit amet dapibus velit cursus. Pellentesque ac auctor lacus, porta rutrum libero. Donec in vestibulum eros, ut ultrices ligula. Phasellus ac ligula ultricies, ultrices nisl quis, consequat leo. Mauris egestas elit ut enim sollicitudin, id blandit lacus placerat. Donec vehicula, odio ut ultrices laoreet, sem risus aliquet ipsum, ac vehicula lacus ligula ut leo. Fusce dolor elit, sodales eu placerat pretium, efficitur quis sapien. Nulla eu dui ac urna eleifend facilisis ut eu ligula."
   },
   "bb6f7e51-96ed-4a9a-a70d-83631499c87e": {
-    "name": "Maria Thompson",
+    "name": "Steve Thompson",
     "age": 14,
     "id": "bb6f7e51-96ed-4a9a-a70d-83631499c87e",
     "medicalCondition": "Lung Disease",
-    "defaultImage": "",
+    "defaultImage": "https://firebasestorage.googleapis.com/v0/b/makeawishstories-9ca11.appspot.com/o/boy2.jpg?alt=media&token=bc30e1f3-c3c8-42b0-b7f2-1f0984f0b9ec",
     "media": [],
-    "storyText": "This is Maria Thompon's Story."
+    "storyText": "This is Steve Thompon's Story. Praesent posuere elementum nisl, et porttitor sapien. Nam quis tristique lectus, quis euismod dui. Mauris eu volutpat mi, at euismod ipsum. Praesent et interdum erat, a vehicula sapien. Morbi at condimentum nunc, quis elementum neque. In eu libero laoreet, vehicula augue vel, porta enim. Quisque rutrum bibendum felis quis feugiat. Nullam ullamcorper viverra turpis nec sollicitudin. Ut non tristique purus. Phasellus vel ornare enim. Duis felis mauris, eleifend id ultrices ut, tempor eu tellus. Pellentesque hendrerit ligula vel viverra aliquam. Mauris elit ex, vehicula in porta nec, convallis in risus. Vestibulum tincidunt tristique nunc, at fringilla ex efficitur ut. Sed ut arcu eu felis pretium pretium. In malesuada ultrices suscipit."
   }
 }
