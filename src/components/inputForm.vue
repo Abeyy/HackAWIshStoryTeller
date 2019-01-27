@@ -1,7 +1,7 @@
 <template lang="html">
 <div>
   <div class="header-component">
-    <img class="header-logo" src="../assets/MAW_Logo.png">
+    <img class="header-logo" src="/assets/MAW_Logo.png">
   </div>
   <div class="input-form-component">
     <div class="input-form-component">

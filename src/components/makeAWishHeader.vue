@@ -8,7 +8,7 @@
       </ul>
     </nav>
     
-    <img class="header-logo" src="../assets/MAW_Logo.png">
+    <img class="header-logo" src="/assets/MAW_Logo.png">
     
     <nav>
       <ul>
