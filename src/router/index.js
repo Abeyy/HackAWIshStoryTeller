@@ -4,7 +4,7 @@ Vue.use(Router)
 
 import inputForm from '../components/inputForm.vue'
 import storyPage from '../components/storyPage.vue'
-
+import listAllWishes from '../components/listAllWishes.vue'
 
 export default new Router({
   mode: 'history',
@@ -18,6 +18,11 @@ export default new Router({
       path: '/storyPage',
       name: 'storyPage',
       component: storyPage
+    },
+    {
+      path: '/allWishes',
+      name: 'listAllWishes',
+      component: listAllWishes
     }
   ]
 })
