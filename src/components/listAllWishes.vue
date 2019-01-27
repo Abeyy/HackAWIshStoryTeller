@@ -6,7 +6,8 @@
 <div class="columns">
   <div class="column">
     <div v-for="x in 2">
-     <div v-for="item in allWishes" :key="item.key">
+     <div class="wish-item" v-for="item in allWishes" :key="item.key">
+      <router-link :to="{ name: 'storyPage', params: {id : item.id} }">
      <div class="box">
       <article class="media">
       <div class="media-left">
@@ -43,7 +44,7 @@
       </div>
     </article>
   </div>
-     
+    </router-link>
   </div>
   </div>
   </div>
@@ -135,6 +136,9 @@ export default {
 }
 #allWishes .tweets-move {
   transition: transform 1s;
+}
+.wish-item p:hover, .wish-item a{
+  text-decoration: none !important;
 }
 </style>
 <!-- name: {type: String, required: true, minlength: 2},

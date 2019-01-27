@@ -11,11 +11,16 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'homepage',
+      component: listAllWishes
+    },
+    {
+      path: '/inputForm',
       name: 'inputForm',
       component: inputForm
     },
     {
-      path: '/storyPage',
+      path: '/storyPage/:id',
       name: 'storyPage',
       component: storyPage
     },

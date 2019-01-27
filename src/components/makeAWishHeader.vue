@@ -2,9 +2,9 @@
   <div class="header-component">
     <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Volunteer</li>
+        <li><a href="https://beta.wish.org/">Home</a></li>
+        <li><a href="https://beta.wish.org/impact">About</a></li>
+        <li><a href="https://beta.wish.org/get-involved">Volunteer</a></li>
       </ul>
     </nav>
     
@@ -12,7 +12,7 @@
     
     <nav>
       <ul>
-        <li> <button class="donate_button" type="button" name="donate_button">Donate</button></li>
+        <li> <button class="donate_button" type="button" name="donate_button"><a href="https://beta.wish.org/donate/single?donate_return=/">Donate</a></button></li>
         <li>Refer a child</li>
       </ul>
     </nav>
@@ -40,6 +40,9 @@ export default {
   li, button {
     cursor: pointer;
   }
+  a {
+    color: #2c3e50;
+  }
   .donate_button {
     background-color: #F7B244;
     border: none;
@@ -47,5 +50,8 @@ export default {
     color: white;
     min-height: 35px;
     padding: 0px 10px;
+  }
+  .donate_button a {
+    color: white;
   }
 </style>
