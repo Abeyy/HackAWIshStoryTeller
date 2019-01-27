@@ -13,6 +13,10 @@ const store = new Vuex.Store({
     },
     updateMasterStoryList (state, updatedJSON) {
       state.masterStoryList = updatedJSON
+    },
+    addStory (state, story) {
+      state.masterStoryList[story.id] = story
+      //TODO: Once the story has been updated, we should update our JSON file
     }
   }
 })
