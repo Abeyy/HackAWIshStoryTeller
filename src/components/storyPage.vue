@@ -3,20 +3,22 @@
     <div class="header-component">
       <Header></Header>
     </div>
-    <div class="row">
-      <div class="story-heading">
-        <div class="story-image-component">
-          <img :src="currentStory.defaultImage" alt="Story Image">
-        </div>
-        
-        <div class="story-name">
-          <h1> {{currentStory.name}}</h1>
-          <span>{{currentStory.age}}, {{currentStory.medicalCondition}}</span>
+    <div class="main-story">
+      <div class="row">
+        <div class="story-heading">
+          <div class="story-image-component">
+            <img :src="currentStory.defaultImage" alt="Story Image">
+          </div>
+          
+          <div class="story-name">
+            <h1> {{currentStory.name}}</h1>
+            <span>{{currentStory.age}}, {{currentStory.medicalCondition}}</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="story-text">
-      <p> {{currentStory.storyText }}</p>
+      <div class="story-text">
+        <p> {{currentStory.storyText }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -38,6 +40,10 @@ export default {
 <style lang="css" scoped>
   .story-image-component img {
     max-width: 150px;
+  }
+  
+  .main-story {
+    border: 1px solid gainsboro;
   }
 
   .story-name h1{

@@ -6,6 +6,7 @@ import BootstrapVue from 'bootstrap-vue'
 import VueRouter from 'vue-router'
 import Router from './router/index.js'
 import Buefy from 'buefy'
+import VueFire from 'vuefire'
 import 'buefy/dist/buefy.css'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -17,6 +18,7 @@ Vue.use(Vuex)
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
 Vue.use(Buefy)
+Vue.use(VueFire)
 
 new Vue({
   el: '#app',
