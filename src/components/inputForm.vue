@@ -8,17 +8,27 @@
       <!-- <img src="" alt="Story Image"> -->
     </div>
   </div>
-  <div>
-    <b-form @submit="onSubmit" @reset="onReset" v-if='true'>
+  <div class="input-form">
+    <b-form @submit="addWish">
       <b-form-group id="kid-Name"
                     label="Name"
                     label-for="exampleInput1"
-                    description="Please enter the Kid's name">
+                    >
         <b-form-input id="exampleInput1"
-                      type="name"
+                      type="text"
                       v-model="name"
                       required
                       placeholder="Please enter the Kid's name">
+        </b-form-input>
+      </b-form-group>
+      <b-form-group id="age"
+                    label="Age"
+                    label-for="exampleInput2">
+        <b-form-input id="age"
+                      type="text"
+                      v-model="age"
+                      required
+                      placeholder="Enter the age">
         </b-form-input>
       </b-form-group>
       <b-form-group id="image"
@@ -32,7 +42,7 @@
         </b-form-input>
       </b-form-group>
       <b-form-group id="medical_condition"
-                    label="Image upload"
+                    label="Medical Condition"
                     label-for="exampleInput2">
         <b-form-input id="medical_condition"
                       type="text"
@@ -41,19 +51,20 @@
                       placeholder="Enter the medical condition">
         </b-form-input>
       </b-form-group>
-      <b-form-group id="age"
-                    label="age"
-                    label-for="exampleInput2">
-        <b-form-input id="age"
-                      type="text"
-                      v-model="age"
+      
+      <b-form-group id="storyText"
+                    label="Story Blurb"
+                    label-for="storyText1">
+        <b-form-textarea id="storyText"
+                      type="textarea"
+                      v-model="storyText"
                       required
-                      placeholder="Enter the age">
-        </b-form-input>
+                      placeholder="Enter your story text here">
+        </b-form-textarea>
       </b-form-group>
 
-      <b-button @click="addWish" type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <b-button class="b-btn" @click="addWish" variant="primary">Submit</b-button>
+      <b-button class="b-btn" type="reset" variant="danger">Reset</b-button>
     </b-form>
   </div>
 </div>
@@ -61,39 +72,42 @@
 </template>
 
 <script>
-
-
 export default {
-  // const fs = require('fs')
-  // import ''
-
   data() {
     return {
       name: '',
       image: '',
       medical_condition: '',
-      age: '',
-      wishes: [{
-        name: 'Jim',
-        image:'pic',
-        medical_condition: 'ooo',
-        age: 28
-      }]
+      storyText: '',
+      age: ''
     }
   },
   methods: {
-    addWish: function() {
-      console.log('got to formtoJson', this.name)
-      this.wishes.push({
-        "Kname": this.name,
-        "image": this.image,
-        "medical_condition": this.medical_condition,
-        "age": this.age
-      })
-      console.log("obj", this.wishes);
+    makeid: function() {
+      var text = "";
+      var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-      this.$store.commit('addStory', this.wishes);
-      console.log(this.$store.state.masterStoryList);
+      for (var i = 1; i < 30; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+        if (i % 5 == 0) {
+            text += "-";
+        }
+      }
+
+      return text;
+    },
+    addWish: function() {
+      let myObj = {
+        'id': this.makeid(),
+        'name': this.name,
+        'age': this.age,        
+        'storyText': this.storyText,
+        // 'defaultImage': this.image,
+        'defaultImage': 'https://firebasestorage.googleapis.com/v0/b/makeawishstories-9ca11.appspot.com/o/abey.jpeg?alt=media&token=561f66aa-bcd7-4871-8cbe-b201526e0a4f',
+        'medicalCondition': this.medical_condition,
+      }
+      this.$store.commit('addStory', myObj)
+      this.$router.push({ name: 'listAllWishes' })
     }
   }
 }
@@ -109,7 +123,12 @@ export default {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-
+  }
+  #storyText {
+    min-height: 100px;
+  }
+  .b-btn {
+    margin-bottom: 10px;
   }
 </style>
 
