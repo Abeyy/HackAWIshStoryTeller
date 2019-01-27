@@ -61,18 +61,39 @@
 </template>
 
 <script>
+
+
 export default {
+  // const fs = require('fs')
+  // import ''
+
   data() {
     return {
       name: '',
       image: '',
       medical_condition: '',
-      age: ''
+      age: '',
+      wishes: [{
+        name: 'Jim',
+        image:'pic',
+        medical_condition: 'ooo',
+        age: 28
+      }]
     }
   },
   methods: {
     addWish: function() {
-      console.log('got to formtoJson', this.name, this.image, this.medical_condition, this.age)
+      console.log('got to formtoJson', this.name)
+      this.wishes.push({
+        "Kname": this.name,
+        "image": this.image,
+        "medical_condition": this.medical_condition,
+        "age": this.age
+      })
+      console.log("obj", this.wishes);
+
+      this.$store.commit('addStory', this.wishes);
+      console.log(this.$store.state.masterStoryList);
     }
   }
 }
